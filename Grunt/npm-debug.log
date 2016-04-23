@@ -1,0 +1,107 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-css-min',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.15.0
+3 info using node@v4.4.2
+4 verbose install initial load of C:\Users\Diartch25\Desktop\ReposGit\dsoldepaz.github.io\Grunt\package.json
+5 warn package.json YogaCenter@0.1.0 No description
+6 warn package.json YogaCenter@0.1.0 No repository field.
+7 warn package.json YogaCenter@0.1.0 No README data
+8 warn package.json YogaCenter@0.1.0 No license field.
+9 verbose installManyTop reading scoped package data from C:\Users\Diartch25\Desktop\ReposGit\dsoldepaz.github.io\Grunt\node_modules\grunt\package.json
+10 verbose installManyTop reading scoped package data from C:\Users\Diartch25\Desktop\ReposGit\dsoldepaz.github.io\Grunt\node_modules\grunt-contrib-jshint\package.json
+11 verbose installManyTop reading scoped package data from C:\Users\Diartch25\Desktop\ReposGit\dsoldepaz.github.io\Grunt\node_modules\grunt-contrib-nodeunit\package.json
+12 verbose installManyTop reading scoped package data from C:\Users\Diartch25\Desktop\ReposGit\dsoldepaz.github.io\Grunt\node_modules\grunt-contrib-uglify\package.json
+13 info package.json grunt@0.4.5 No license field.
+14 info package.json grunt-contrib-jshint@0.10.0 No license field.
+15 info package.json grunt-contrib-nodeunit@0.4.1 No license field.
+16 info package.json grunt-contrib-uglify@0.5.1 No license field.
+17 verbose readDependencies loading dependencies from C:\Users\Diartch25\Desktop\ReposGit\dsoldepaz.github.io\Grunt\package.json
+18 silly cache add args [ 'grunt-contrib-css-min', null ]
+19 verbose cache add spec grunt-contrib-css-min
+20 silly cache add parsed spec Result {
+20 silly cache add   raw: 'grunt-contrib-css-min',
+20 silly cache add   scope: null,
+20 silly cache add   name: 'grunt-contrib-css-min',
+20 silly cache add   rawSpec: '',
+20 silly cache add   spec: 'latest',
+20 silly cache add   type: 'tag' }
+21 silly addNamed grunt-contrib-css-min@latest
+22 verbose addNamed "latest" is being treated as a dist-tag for grunt-contrib-css-min
+23 info addNameTag [ 'grunt-contrib-css-min', 'latest' ]
+24 silly mapToRegistry name grunt-contrib-css-min
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry data Result {
+27 silly mapToRegistry   raw: 'grunt-contrib-css-min',
+27 silly mapToRegistry   scope: null,
+27 silly mapToRegistry   name: 'grunt-contrib-css-min',
+27 silly mapToRegistry   rawSpec: '',
+27 silly mapToRegistry   spec: 'latest',
+27 silly mapToRegistry   type: 'tag' }
+28 silly mapToRegistry uri https://registry.npmjs.org/grunt-contrib-css-min
+29 verbose addNameTag registry:https://registry.npmjs.org/grunt-contrib-css-min not in flight; fetching
+30 verbose request uri https://registry.npmjs.org/grunt-contrib-css-min
+31 verbose request no auth needed
+32 info attempt registry request try #1 at 10:13:49
+33 verbose request id 88e07d27493e776b
+34 http request GET https://registry.npmjs.org/grunt-contrib-css-min
+35 http 404 https://registry.npmjs.org/grunt-contrib-css-min
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=0',
+36 verbose headers   'content-length': '2',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Sat, 23 Apr 2016 16:13:59 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   age: '0',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-jfk1050-JFK',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1461428038.771699,VS0,VE410',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 silly get cb [ 404,
+37 silly get   { 'content-type': 'application/json',
+37 silly get     'cache-control': 'max-age=0',
+37 silly get     'content-length': '2',
+37 silly get     'accept-ranges': 'bytes',
+37 silly get     date: 'Sat, 23 Apr 2016 16:13:59 GMT',
+37 silly get     via: '1.1 varnish',
+37 silly get     age: '0',
+37 silly get     connection: 'keep-alive',
+37 silly get     'x-served-by': 'cache-jfk1050-JFK',
+37 silly get     'x-cache': 'MISS',
+37 silly get     'x-cache-hits': '0',
+37 silly get     'x-timer': 'S1461428038.771699,VS0,VE410',
+37 silly get     vary: 'Accept-Encoding' } ]
+38 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/grunt-contrib-css-min
+38 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+38 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+38 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+38 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:199:22)
+38 verbose stack     at emitTwo (events.js:87:13)
+38 verbose stack     at Request.emit (events.js:172:7)
+38 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1036:10)
+38 verbose stack     at emitOne (events.js:82:20)
+38 verbose stack     at Request.emit (events.js:169:7)
+38 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:963:12)
+39 verbose statusCode 404
+40 verbose pkgid grunt-contrib-css-min
+41 verbose cwd C:\Users\Diartch25\Desktop\ReposGit\dsoldepaz.github.io\Grunt
+42 error Windows_NT 6.3.9600
+43 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "grunt-contrib-css-min" "--save-dev"
+44 error node v4.4.2
+45 error npm  v2.15.0
+46 error code E404
+47 error 404 Registry returned 404 for GET on https://registry.npmjs.org/grunt-contrib-css-min
+47 error 404
+47 error 404 'grunt-contrib-css-min' is not in the npm registry.
+47 error 404 You should bug the author to publish it (or use the name yourself!)
+47 error 404 It was specified as a dependency of 'YogaCenter'
+47 error 404
+47 error 404 Note that you can also install from a
+47 error 404 tarball, folder, http url, or git url.
+48 verbose exit [ 1, true ]
