@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 60%;
+  margin: 0 auto;
+}
+.about-group {
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+}
+.about-group div {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+.about-what-we-do {
+  width: 100%;
+}
+.about-what-we-do ul {
+  width: 100%;
+  overflow: hidden;
+}
+.about-what-we-do li {
+  display: inline-block;
+  float: left;
+  width: 25%;
+}
+.about-what-we-do li img {
+  width: 100%;
+  height: 154px;
+}
