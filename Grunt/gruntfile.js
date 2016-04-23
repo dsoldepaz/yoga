@@ -8,9 +8,20 @@ module.exports =function(grunt) {
                     path: ["less/"]
                 },
                 files: {
-                    "css/style.css" : "less/source.less"
+                    "../css/style.css" : "../less/source.less"
                 }
             }
+        },
+
+        watch: { 
+            less: { 
+                files: ['../less/styles.less'], 
+                tasks: ['less:development'], 
+                options: { 
+                    spawn: false, 
+                    //livereload: true 
+                }
+            } 
         },
 
         uncss: {
@@ -47,9 +58,11 @@ module.exports =function(grunt) {
 
     grunt.loadNpmTasks('grunt-uncss');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.registerTask('default', ["cssmin","uncss"]);
     grunt.registerTask('minjs', ["uglify"]);
-    grunt.registerTask('comp', ["less"]);
+    grunt.registerTask('comp', ["watch"]);
+    grunt.registerTask('c', ["less"]);
 }
