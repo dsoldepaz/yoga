@@ -1,7 +1,7 @@
 {"menu":[
-    {"name": "HOME", "link": "www.google.com", "sub": null
+    {"name": "HOME", "link": "index.html", "sub": null
     },
-    {"name": "ABOUT US", "link": "www.google.com", "sub": [
+    {"name": "ABOUT US", "link": "about_us.html", "sub": [
         {"name": "Yoga Poses","link": "www.google.com", "sub": null},
         {"name": "Pranayamas","link": "www.google.com", "sub": null},
 		{"name": "Yoga Bandhas","link": "www.google.com", "sub": null},
@@ -13,7 +13,7 @@
 		{"name": "Yoga Directory","link": "www.google.com", "sub": null},
         {"name": "Yoga Articles","link": "www.google.com", "sub": null}
         ]},
-    {"name": "TRAINING", "link": "www.google.com", "sub": null},        
-    {"name": "GALLERY", "link": "www.google.com","sub": null},
-	{"name": "CONTACTS", "link": "www.google.com","sub": null}
+    {"name": "TRAINING", "link": "training.html", "sub": null},        
+    {"name": "GALLERY", "link": "gallery.html","sub": null},
+	{"name": "CONTACTS", "link": "contacts.html","sub": null}
 ]}
