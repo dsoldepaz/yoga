@@ -49,6 +49,7 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.registerTask('default', ["cssmin", "uglify","uncss"]);
-    grunt.registerTask('comp', ["less"]);
+    grunt.registerTask('cssmin', ["cssmin","uncss"]);
+    grunt.registerTask('jsmin', ["uglify"]);
+    grunt.registerTask('less', ["less"]);
 }
