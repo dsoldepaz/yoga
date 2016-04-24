@@ -1,3 +1,4 @@
+/*Global*/
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@ body {
   width: 60%;
   margin: 0 auto;
 }
+/*About*/
 .about-group {
   box-sizing: border-box;
   overflow: hidden;
@@ -31,4 +33,22 @@ body {
 .about-what-we-do li img {
   width: 100%;
   height: 154px;
+}
+/*Gallery*/
+div.gallery-image {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+div.gallery-image:hover {
+  border: 1px solid #777;
+}
+div.gallery-image img {
+  width: 100%;
+  height: auto;
+}
+div.gallery-image p {
+  padding: 15px;
+  text-align: center;
 }
