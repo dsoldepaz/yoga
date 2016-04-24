@@ -37,18 +37,28 @@ body {
 /*Gallery*/
 div.gallery-image {
   margin: 5px;
-  border: 1px solid #ccc;
   float: left;
-  width: 180px;
-}
-div.gallery-image:hover {
-  border: 1px solid #777;
+  width: 30%;
+  box-sizing: border-box;
 }
 div.gallery-image img {
   width: 100%;
   height: auto;
 }
-div.gallery-image p {
-  padding: 15px;
-  text-align: center;
+/*Training*/
+.training-info {
+  width: 60%;
+  float: left;
+}
+.course-descriptions {
+  width: 40%;
+  float: left;
+}
+.teacher-links {
+  width: 60%;
+  float: left;
+}
+.fresh-links {
+  width: 40%;
+  float: left;
 }
