@@ -15,6 +15,32 @@ body {
     margin: 0 auto;
 }
 
+/*Navigation Menu*/	
+
+
+#menu ul ul {
+	display: none;
+}
+
+#menu ul li:hover > ul {
+	display: block;
+}
+#menu ul {
+	background: #efefef; 
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+
 /*About*/
 
 .about-group {
@@ -47,22 +73,22 @@ body {
 
 /*Gallery*/
 
-div.gallery-image {
+.gallery-image {
     margin: 5px;
     float: left;
     width: 30%;
 	box-sizing: border-box;
 }	
 
-div.gallery-image:hover {
+.gallery-image:hover {
 }
 
-div.gallery-image img {
+.gallery-image img {
     width: 100%;
     height: auto;
 }
 
-div.gallery-image p {
+.gallery-image p {
 }
 
 /*Training*/

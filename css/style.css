@@ -7,6 +7,20 @@ body {
   width: 60%;
   margin: 0 auto;
 }
+/*Navigation Menu*/
+#menu ul ul {
+  display: none;
+}
+#menu ul li {
+  margin: 4px;
+  float: left;
+}
+#menu ul {	
+  list-style: none;
+  position: relative;
+  display: inline-table;
+}
+
 /*About*/
 .about-group {
   box-sizing: border-box;
@@ -35,13 +49,13 @@ body {
   height: 154px;
 }
 /*Gallery*/
-div.gallery-image {
+.gallery-image {
   margin: 5px;
   float: left;
   width: 30%;
   box-sizing: border-box;
 }
-div.gallery-image img {
+.gallery-image img {
   width: 100%;
   height: auto;
 }
