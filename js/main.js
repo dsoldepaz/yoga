@@ -5,9 +5,11 @@ $.ajax({
 		
 		function parseMenu(ul, menu) {				
 			for (var i=0;i<menu.length;i++) {
-				var li=$(ul).append('<li><a href="'+menu[i].link+'">'+menu[i].name+'</a></li>');
+				
+				var li=$('<li><a href="'+menu[i].link+'">'+menu[i].name+'</a></li>');
+				$(ul).append(li);
 				if (menu[i].sub!=null) {
-					var subul=$('<ul id="submenu_'+menu[i].link+'"></ul>');
+					var subul=$('<ul></ul>');
 					$(li).append(subul);
 					parseMenu($(subul), menu[i].sub);
 				}
