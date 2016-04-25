@@ -34,8 +34,8 @@
 body {
     font-size: 62.5%; /*Font size standard for calculate the font in px*/
     font-family: 'Open Sans', Arial, sans-serif;
-    margin: 0 auto;
-    width: 60%;
+    /*margin: 0 auto;
+    width: 60%;*/
 }
 
 p {
@@ -44,8 +44,18 @@ p {
     word-spacing: 5px;
 }
 
+a {
+    text-decoration: none;
+}
+
 ul {
     list-style-image: url('../img/arrow.png');
+}
+
+.content {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1060px;
 }
 
 /*Navigation Menu*/
@@ -89,7 +99,7 @@ ul {
 
         }
         a:hover {  
-            border-bottom: grey 1px dotted;
+            .border-dotted();
         }
     }   
     li a {
@@ -108,9 +118,6 @@ ul {
 
 .about-group {
     box-sizing: border-box;
-    margin: 0 auto;
-    overflow: hidden;
-    width: 1060px;
     div {
         display: inline-block;
         float: left;
@@ -133,7 +140,7 @@ ul {
     }
     h2, h2 + p {
         margin-left: 20px;
-        width: 295px;
+        width: 300px;
     }
 
     p:last-child{
@@ -141,8 +148,9 @@ ul {
     }
 
     img{
-        width: 290px;
-        margin-bottom: 28px;
+        width: 285px;
+        height: 215px;
+        margin: 10px 0 28px 0;
     }
 }
 
@@ -162,25 +170,49 @@ ul {
 }
 
 .about-what-we-do {
-
-    margin: 0 auto;
-    width: 1060px;
+    padding: 90px 0;
     h2{
         .border-dotted();
-        margin: 0 55px;
+        .font-size(21);
+        margin: 0 55px 35px 55px;
+        padding-bottom: 15px;
     }
     ul {
+        box-sizing: border-box;
         margin: 0 55px;
         overflow: hidden;
     }
     li {
         display: inline-block;
         float: left;
-        width: 25%;
+        margin: 0 10px;
+        padding: 0;
+        width: 222px;
+        p {
+            margin-bottom: 25px;
+        }
+    }
+    li a{
+        .border-dotted();
+        .font-size(11);
+        text-transform: uppercase;
+        &:hover{
+            color: @hover;
+        }
+        &:focus{
+            color: @hover;
+        }
+    }
+    li:first-child {
+        margin: 0 10px 0 0;
+    }
+     li:last-child {
+        margin: 0 0 0 10px;
     }
     li img {
-        width: 100%;
         height: 154px;
+        margin-bottom: 25px;
+        width: 222px;
     }
 }
 
@@ -216,38 +248,127 @@ ul {
 /*Training*/
 
 .training-info {
-    width: 60%;
     float: left;
+    margin: 0 0 90px 55px;
+    width: 605px;
+    h1 {
+        .font-size(30);
+        margin-bottom: 10px;
+        width: 605px;
+    }
+}
+
+.training-info-group {
+    margin-bottom: 90px;
+    h2{
+        .font-size(21);
+        margin-bottom: 10px;
+        width: 605px;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    a {
+        .border-dotted();
+        .font-size(11);
+        text-transform: uppercase;
+        &:hover{
+            color: @hover;
+        }
+        &:focus{
+            color: @hover;
+        }
+    }
+}
+
+.training-programs{
+    h2{
+        .font-size(30);
+        line-height: 2rem;
+        margin-bottom: 25px;
+        width: 605px;
+    }
+    ul{
+        width: 580px;
+        margin-left: 20px;
+    }
 }
 
 .course-descriptions {
-    width: 40%;
     float: left;
+    width: 295px;
+    margin: 0 55px 0 35px;
+    h2{
+        .font-size(30);
+        line-height: 2rem;
+        margin-bottom: 25px;
+        width: 295px;
+    }
+    img{
+        height: 165px;
+        margin-bottom: 15px;
+        width: 295px;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    a {
+        .border-dotted();
+        .font-size(11);
+        text-transform: uppercase;
+        &:hover{
+            color: @hover;
+        }
+        &:focus{
+            color: @hover;
+        }
+    }
+}
+
+.training-points{
+    background: @background;
+    h2 {
+        .border-dotted();
+        .font-size(21);
+        margin: 0 0 35px 0;
+        padding-bottom: 15px;
+    }
+}
+
+.training-points-group{
+    padding: 90px 0;
 }
 
 .teacher-links {
-    width: 60%;
     float: left;
+    margin: 0 0 0 55px;
+    width: 605px;
     ul {
+        width: 605px;
+        margin-left: 20px;
         li {
-            width: 50%;
+            width: 300px;
             float: left;
         }
     }
 }
 
 .fresh-links {
-    width: 40%;
+    margin: 0 55px 0 35px;
+    width: 295px;
     float: left;
+    ul{
+        width: 275px;
+        li{
+            margin-left: 20px;
+        }
+    }
 }
 
 /*Contact*/
 
 .contact-group{
     box-sizing: border-box;
-    margin: 0 auto;
-    overflow: hidden;
-    width: 1060px;
 }
 
 .contact-group-data{
