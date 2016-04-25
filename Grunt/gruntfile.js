@@ -1,7 +1,21 @@
 module.exports =function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-
+		
+		copy: {
+			main: {
+				files: [
+					{expand: true, src: ['../*.html'], dest: '../deploy/*.html'},
+					{expand: true, src: ['../*.json'], dest: '../deploy/*.json'},
+					{expand: true, src: ['../*.js'], dest: '../deploy/*.js'},
+					{expand: true, src: ['../css/*.min.css'], dest: '../deploy/*.min.css'},
+					{expand: true, src: ['../js/*.min.js'], dest: '../deploy/*.min.js'},
+					{expand: true, src: ['../img/*.*'], dest: '../deploy/*.*'},
+					{expand: true, src: ['../img/**'], dest: '../deploy/*.*'},
+				],
+			},
+		},
+		
         less: {
             development: {
                 option: {
@@ -61,7 +75,10 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-copy');
+	
     grunt.registerTask('default', ["cssmin","uncss"]);
     grunt.registerTask('min', ["uglify", "cssmin"]);
     grunt.registerTask('comp', ["less", "watch"]);
+	grunt.registerTask('deploy', ["uglify", "less", "cssmin", "copy"]);
 }
