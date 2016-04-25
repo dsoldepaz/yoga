@@ -1,9 +1,22 @@
-/*Global*/
+/*Font*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic,300italic,300);
+
+/*Mixins*/
 
 .font-size(@size) {
-    font-size: @size + px;
-    font-size: (@size / 10) + rem;
+  font-size: e(%("%dpx", @size));
+  line-height: e(%("%drem", @size/10));
 }
+
+/*Variables*/
+
+@border: #e9e9e9; /*For dotted border gray*/
+@hover: #ff6f53;
+@error: #f41313;
+@contact: #ccc;
+
+/*Global*/
 
 * {
     margin: 0;
@@ -11,8 +24,10 @@
 }
 
 body {
-    width: 60%;
+    font-size: 62.5%; /*Font size standard for calculate the font in px*/
+    font-family: 'Open Sans', Arial, sans-serif;
     margin: 0 auto;
+    width: 60%;
 }
 
 /*Navigation Menu*/
@@ -106,23 +121,100 @@ body {
 
 .contact-group{
     box-sizing: border-box;
+    margin: 0 auto;
     overflow: hidden;
-    width: 100%;
+    width: 1060px;
 }
 
 .contact-group-data{
     display: inline-block;
     float: left;
-    width: 50%;
+    margin: 0 55px;
+    overflow: hidden;
+    width: 540px;
+    h1{
+        margin-bottom: 28px;
+        .font-size(40);
+    }
+    h2{
+        .font-size(29);
+        margin-bottom: 15px;
+        width: 540px;
+    }
+}
+
+.contact-data{
+        display: inline-block;
+        float: left;
+        width: 250px;
+        margin-right: 10px;
+        p{
+            .font-size(18);
+            color: @contact;
+        }
 }
 
 .contact-group-form{
     display: inline-block;
     float: left;
-    width: 50%;
+    margin: 0 55px;
+    overflow: hidden;
+    width: 300px;
+    h2 {
+        margin-bottom: 28px;
+        .font-size(40);
+    }
+    p {
+        display: none;
+    } 
+    textarea{
+        border: 1px solid @border ;
+        display: block;
+        height: 328px;
+        margin: 6px 0 28px 0;
+        width: 298px;
+    }
+
 }
 
 .contact-group-map{
-    width: 100%;
+    width: 540px;
     height: 272px;
+    margin-bottom: 28px;
+}
+
+.contact-form{
+    p{
+        color: @error;
+    }
+}
+
+.space-form{
+    border: 1px solid @border;
+    display: block;
+    height: 40px;
+    margin: 6px 0;
+    width: 298px;
+}
+
+.button-input{
+    .font-size(11);
+    background: none;
+    border: none;
+    border-bottom: 2px;
+    border-bottom-color: @border;
+    border-bottom-style: dotted;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    text-transform: uppercase;
+    &:hover{
+        color: @hover;
+    }
+    &:focus{
+        color: @hover;
+    }
+    &:active{
+        color: @hover;
+    }
 }
