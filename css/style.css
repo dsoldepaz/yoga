@@ -64,11 +64,12 @@ ul {
 #menu ul li {
   margin: 4px;
   float: left;
-  padding: 14px 16px;
+  padding: 14px 6px;
 }
 #menu ul li a {
   display: inline-block;
   text-decoration: none;
+  opacity: 0.5;
 }
 #menu ul li:hover > ul {
   display: block;
@@ -78,6 +79,7 @@ ul {
   border-bottom: 2px;
   border-bottom-color: #e9e9e9;
   border-bottom-style: dotted;
+  opacity: 1;
   margin-bottom: -2px;
 }
 #menu li a {
@@ -197,13 +199,17 @@ ul {
 }
 /*Gallery*/
 .gallery-image {
-  margin: 5px;
+  margin: 10px;
   float: left;
   width: 30%;
   box-sizing: border-box;
   position: relative;
   background: url('../img/gallery/gallery_overlay.jpg') no-repeat;
   background-size: 100%;
+}
+.gallery-image h2 {
+  font-size: 21px;
+  line-height: 2.1rem;
 }
 .gallery-image a {
   color: black;
@@ -221,6 +227,11 @@ ul {
 }
 .gallery-image:hover h2 {
   color: #f36e56;
+}
+.gallery-title {
+  font-size: 30px;
+  line-height: 3rem;
+  margin: 0 10px 10px;
 }
 /*Training*/
 .training-info {

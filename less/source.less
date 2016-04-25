@@ -89,18 +89,20 @@ ul {
         li {    
 			margin: 4px;
 			float: left;
-			padding: 14px 16px;			
+			padding: 14px 6px;						
 			a {
                 display: inline-block;
                 text-decoration: none;
+				opacity: 0.5;
             }			
         }       
         li:hover > ul{
-            display: block;
+            display: block;			
         }
         a:hover {  
             .border-dotted();
-			margin-bottom:-2px
+			opacity: 1;
+			margin-bottom:-2px;
         }
     }   
     li a {
@@ -218,13 +220,16 @@ ul {
 /*Gallery*/
 
 .gallery-image {
-    margin: 5px;
+    margin: 10px;
     float: left;
     width: 30%;
     box-sizing: border-box;
     position: relative;
     background: url('../img/gallery/gallery_overlay.jpg') no-repeat;
     background-size: 100%;
+	h2{
+        .font-size(21);
+    }
     a {
         color: black;    
         text-decoration: none;
@@ -242,6 +247,10 @@ ul {
 .gallery-image:hover{ 
     img {opacity: 0.5; }
 	h2 {color: #f36e56; }
+}
+.gallery-title {
+	.font-size(30);
+	margin: 0 10px 10px;
 }
 
 /*Training*/
