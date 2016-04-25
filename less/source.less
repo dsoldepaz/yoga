@@ -30,20 +30,60 @@ body {
     width: 60%;
 }
 
+ul {
+	list-style-image: url('../img/arrow.png');
+}
+
 /*Navigation Menu*/
 
-#menu ul ul {
-  display: none;
-}
-#menu ul li {
-  margin: 4px;
-  float: left;
-}
-#menu ul {	
-  list-style: none;
-  position: relative;
-  display: inline-table;
-}
+#menu {
+	margin: 0 auto; 
+	text-align: center;
+	
+	ul {	
+	  list-style: none;
+	  position: relative;
+	  display: inline-table;
+	  
+		ul {
+			display: none;
+			background: #f36e56;
+			position: absolute; top: 100%;
+			li {
+				float: none;
+				position: relative;
+				a {
+				padding: 15px 40px;
+				color: #fff;
+				}			
+			}
+		}
+		li {	
+		  margin: 4px;
+		  float: left;
+		  padding: 14px 16px;
+		  a {
+				display: block;
+				text-decoration: none;
+			}
+		}		
+		li:hover > ul{
+			display: block;
+		}
+		ul li a:hover {
+			background: #4b545f;			
+		}
+		a:hover {  
+			border-bottom: grey 1px dotted;
+		}
+	}	
+	li a {
+		color: black;    
+		text-decoration: none;
+	}
+	
+	
+} 
 
 /*About*/
 
@@ -82,17 +122,26 @@ body {
     float: left;
     width: 30%;
 	box-sizing: border-box;
+	position: relative;
+	background: url('../img/gallery/gallery_overlay.jpg') no-repeat;
+    background-size: 100%;
+	a {
+		color: black;    
+		text-decoration: none;
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+	
+	
+	p {
+		color: grey;
+	}	
 }	
-
-.gallery-image:hover {
-}
-
-.gallery-image img {
-    width: 100%;
-    height: auto;
-}
-
-.gallery-image p {
+.gallery-image:hover{ 
+	img {opacity: 0.5; }
+	h2 {color: #f36e56;	}
 }
 
 /*Training*/
@@ -110,6 +159,12 @@ body {
 .teacher-links {
 	width: 60%;
 	float: left;
+	ul {
+		li {
+			width: 50%;
+			float: left;
+		}
+	}
 }
 
 .fresh-links {

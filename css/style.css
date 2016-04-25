@@ -15,18 +15,54 @@ body {
   margin: 0 auto;
   width: 60%;
 }
-/*Navigation Menu*/
-#menu ul ul {
-  display: none;
+ul {
+  list-style-image: url('../img/arrow.png');
 }
-#menu ul li {
-  margin: 4px;
-  float: left;
+/*Navigation Menu*/
+#menu {
+  margin: 0 auto;
+  text-align: center;
 }
 #menu ul {
   list-style: none;
   position: relative;
   display: inline-table;
+}
+#menu ul ul {
+  display: none;
+  background: #f36e56;
+  position: absolute;
+  top: 100%;
+}
+#menu ul ul li {
+  float: none;
+  position: relative;
+}
+#menu ul ul li a {
+  padding: 15px 40px;
+  color: #fff;
+}
+#menu ul li {
+  margin: 4px;
+  float: left;
+  padding: 14px 16px;
+}
+#menu ul li a {
+  display: block;
+  text-decoration: none;
+}
+#menu ul li:hover > ul {
+  display: block;
+}
+#menu ul ul li a:hover {
+  background: #4b545f;
+}
+#menu ul a:hover {
+  border-bottom: grey 1px dotted;
+}
+#menu li a {
+  color: black;
+  text-decoration: none;
 }
 /*About*/
 .about-group {
@@ -61,10 +97,26 @@ body {
   float: left;
   width: 30%;
   box-sizing: border-box;
+  position: relative;
+  background: url('../img/gallery/gallery_overlay.jpg') no-repeat;
+  background-size: 100%;
+}
+.gallery-image a {
+  color: black;
+  text-decoration: none;
 }
 .gallery-image img {
   width: 100%;
   height: auto;
+}
+.gallery-image p {
+  color: grey;
+}
+.gallery-image:hover img {
+  opacity: 0.5;
+}
+.gallery-image:hover h2 {
+  color: #f36e56;
 }
 /*Training*/
 .training-info {
@@ -77,6 +129,10 @@ body {
 }
 .teacher-links {
   width: 60%;
+  float: left;
+}
+.teacher-links ul li {
+  width: 50%;
   float: left;
 }
 .fresh-links {
