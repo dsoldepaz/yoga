@@ -15,11 +15,11 @@ module.exports =function(grunt) {
 
         watch: { 
             less: { 
-                files: ['../less/styles.less'], 
-                tasks: ['less:development'], 
+                files: ['../less/**/*.less'], 
+                tasks: ['less'], 
                 options: { 
                     spawn: false, 
-                    //livereload: true 
+                    livereload: true 
                 }
             } 
         },
@@ -27,7 +27,7 @@ module.exports =function(grunt) {
         uncss: {
             dist: {
                 files: {
-                    'css/style.css' : ['index.html']
+                    '../css/style.css' : ['index.html']
                 }
             }
         },
@@ -38,7 +38,7 @@ module.exports =function(grunt) {
             },
             my_target: {
                 files: {
-                    'js/main.min.js' : 'js/main.js'
+                    '../js/main.min.js' : '../js/main.js'
                 }
             }
         },
@@ -47,9 +47,9 @@ module.exports =function(grunt) {
             my_target: {
                 files: [{
                     expand: true,
-                    cwd: 'css/',
+                    cwd: '../css/',
                     src: ['*.css', '!*.min.css'],
-                    dest: 'css/',
+                    dest: '../css/',
                     ext: '.min.css'
                 }]
             }
@@ -62,7 +62,6 @@ module.exports =function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.registerTask('default', ["cssmin","uncss"]);
-    grunt.registerTask('minjs', ["uglify"]);
-    grunt.registerTask('comp', ["watch"]);
-    grunt.registerTask('c', ["less"]);
+    grunt.registerTask('min', ["uglify", "cssmin"]);
+    grunt.registerTask('comp', ["less", "watch"]);
 }
