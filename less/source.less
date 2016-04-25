@@ -107,16 +107,26 @@ ul {
     float: left;
     width: 30%;
 	box-sizing: border-box;
-	
+	position: relative;
+	background: url('../img/gallery/gallery_overlay.jpg') no-repeat;
+    background-size: 100%;
+	a {
+		color: black;    
+		text-decoration: none;
+	}
 	img {
 		width: 100%;
 		height: auto;
 	}
+	
+	
 	p {
-	}
+		color: grey;
+	}	
 }	
-
-.gallery-image:hover {
+.gallery-image:hover{ 
+	img {opacity: 0.5; }
+	h2 {color: #f36e56;	}
 }
 
 /*Training*/

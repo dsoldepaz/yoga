@@ -7,6 +7,9 @@ body {
   width: 60%;
   margin: 0 auto;
 }
+ul {
+  list-style-image: url('../img/arrow.png');
+}
 /*Navigation Menu*/
 #menu {
   margin: 0 auto;
@@ -86,10 +89,26 @@ body {
   float: left;
   width: 30%;
   box-sizing: border-box;
+  position: relative;
+  background: url('../img/gallery/gallery_overlay.jpg') no-repeat;
+  background-size: 100%;
+}
+.gallery-image a {
+  color: black;
+  text-decoration: none;
 }
 .gallery-image img {
   width: 100%;
   height: auto;
+}
+.gallery-image p {
+  color: grey;
+}
+.gallery-image:hover img {
+  opacity: 0.5;
+}
+.gallery-image:hover h2 {
+  color: #f36e56;
 }
 /*Training*/
 .training-info {
@@ -104,10 +123,6 @@ body {
   width: 60%;
   float: left;
 }
-.teacher-links ul {
-  list-style-image: url('../img/arrow.png');
-}
-
 .teacher-links ul li {
   width: 50%;
   float: left;
