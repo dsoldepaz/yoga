@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>YogaCenter - About us</title>
+        <title>YogaCenter - Contact</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
     </head>
 
@@ -14,29 +14,43 @@
 
         <section class="contact-group">
             <div class="contact-group-data">
-                <h2>How to Find Us</h2>
+                <h1>How to Find Us</h2>
                 <div id="map" class="contact-group-map"> </div>
                 <h2>The Company Name Inc.</h2>
-                <p>8901 Marmora Road, Glasgow, D04 89GR.</p>
-                <p>Freephone:+1 800 559 6580</p>
-                <p>Telephone:+1 800 603 6035</p>
-                <p>FAX:+1 800 889 9898</p>
-                <p>E-mail: mail@demolink.org</p>
-                <p>9863 - 9867 Mill Road, Cambridge, MG09 99HT.</p>
-                <p>Freephone:+1 800 559 6580</p>
-                <p>Telephone:+1 800 603 6035</p>
-                <p>FAX:+1 800 889 9898</p>
-                <p>E-mail: mail@demolink.org</p>
+                <div class="contact-data">
+                    <p>8901 Marmora Road, Glasgow, D04 89GR.</p>
+                    <p>Freephone:+1 800 559 6580</p>
+                    <p>Telephone:+1 800 603 6035</p>
+                    <p>FAX:+1 800 889 9898</p>
+                    <p>E-mail: mail@demolink.org</p>
+                </div>
+                <div class="contact-data">
+                    <p>9863 - 9867 Mill Road, Cambridge, MG09 99HT.</p>
+                    <p>Freephone:+1 800 559 6580</p>
+                    <p>Telephone:+1 800 603 6035</p>
+                    <p>FAX:+1 800 889 9898</p>
+                    <p>E-mail: mail@demolink.org</p>
+                </div>
+                
+                
             </div>
             <div class="contact-group-form">
-                <h2></h2>
+                <h2>Contact Form</h2>
                 <form id="message" name="formgroup" class="contact-form" action="">
-                    <input id="name" name="inputname" class="mov-inputs space-form" type="text"  placeholder="Name">
-                    <input id="email" name="inputmail" class="mov-inputs space-form" type="text"  placeholder="E-mail">
-                    <input id="phone" name="inputmail" class="mov-inputs space-form" type="text"  placeholder="Phone">
-                    <textarea id="text-message" name="speak" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <p id="req-1">*This field is required.</p>
+                    <p id="val-1">*This is not a valid name.</p>
+                    <input id="name" name="inputname" class="space-form" type="text"  placeholder="Name: ">
+                    <p id="req-2">*This field is required.</p>
+                    <p id="val-2">*This is not a valid email.</p>
+                    <input id="email" name="inputmail" class="space-form" type="email"  placeholder="E-mail: ">
+                    <p id="req-3">*This field is required.</p>
+                    <p id="val-3">*This is not a valid phone.</p>
+                    <input id="phone" name="inputmail" class="space-form" type="phone"  placeholder="Phone: ">
+                    <p id="req-4">*This field is required.</p>
+                    <p id="val-4">*The message is tooshort.</p>
+                    <textarea id="text-message" name="write" id="" cols="30" rows="10" placeholder="Message: "></textarea>
+                     <input id="reset" class="button-input" type="reset" name="clear" value="Clear">
                      <input id="send" class="button-input" type="submit" name="send" value="Send">
-                     <input id="send" class="button-input" type="submit" name="send" value="Clear">
                 </form>
             </div>
         </section>
