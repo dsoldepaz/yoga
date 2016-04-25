@@ -9,12 +9,20 @@
   line-height: e(%("%drem", @size/10));
 }
 
+.border-dotted(){
+    border: none;
+    border-bottom: 2px;
+    border-bottom-color: @border;
+    border-bottom-style: dotted;
+}
+
 /*Variables*/
 
 @border: #e9e9e9; /*For dotted border gray*/
 @hover: #ff6f53;
 @error: #f41313;
-@contact: #ccc;
+@text: #ccc;
+@background: #f6f6f6;
 
 /*Global*/
 
@@ -28,6 +36,12 @@ body {
     font-family: 'Open Sans', Arial, sans-serif;
     margin: 0 auto;
     width: 60%;
+}
+
+p {
+    .font-size(12);
+    color: @text;
+    word-spacing: 5px;
 }
 
 ul {
@@ -71,7 +85,8 @@ ul {
             display: block;
         }
         ul li a:hover {
-            background: #4b545f;            
+            background: #4b545f;
+
         }
         a:hover {  
             border-bottom: grey 1px dotted;
@@ -87,21 +102,75 @@ ul {
 
 /*About*/
 
+.about-sectionb{
+    background: @background;
+}
+
 .about-group {
     box-sizing: border-box;
+    margin: 0 auto;
     overflow: hidden;
-    width: 100%;
+    width: 1060px;
     div {
         display: inline-block;
         float: left;
-        width: 50%;
+    }
+}
+
+.about-group-info{
+    margin: 0 0 90px 55px;
+    width: 605px;
+    h1{
+        .font-size(40);
+        width: 605px;
+    }
+    h2{
+        .font-size(21);
+        margin-bottom: 12px;
+    }
+    h2, img, p{
+        float: left;
+    }
+    h2, h2 + p {
+        margin-left: 20px;
+        width: 295px;
+    }
+
+    p:last-child{
+        width: 605px;
+    }
+
+    img{
+        width: 290px;
+        margin-bottom: 28px;
+    }
+}
+
+.about-group-points{
+    margin: 0 55px 0 35px;
+    width: 295px;
+    h2{
+        .font-size(40);
+    }
+}
+
+.points{
+    list-style-image: url('../img/arrow.png') center; 
+    p{
+        margin-bottom: 10px;
     }
 }
 
 .about-what-we-do {
-    width: 100%;
+
+    margin: 0 auto;
+    width: 1060px;
+    h2{
+        .border-dotted();
+        margin: 0 55px;
+    }
     ul {
-        width: 100%;
+        margin: 0 55px;
         overflow: hidden;
     }
     li {
@@ -205,7 +274,7 @@ ul {
         margin-right: 10px;
         p{
             .font-size(18);
-            color: @contact;
+            color: @text;
         }
 }
 
@@ -253,12 +322,9 @@ ul {
 }
 
 .button-input{
+    .border-dotted();
     .font-size(11);
     background: none;
-    border: none;
-    border-bottom: 2px;
-    border-bottom-color: @border;
-    border-bottom-style: dotted;
     display: inline-block;
     float: left;
     margin-right: 20px;
