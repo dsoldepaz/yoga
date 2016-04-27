@@ -23,7 +23,7 @@ $.ajax({
 		var ul=$('#menu-root')
 		parseMenu(ul, nav.menu);
     },
-    url: 'navigation.json'
+    url: 'json/navigation.json'
 });
 
 ///////////////////////////////////////////////////////////////////////////////

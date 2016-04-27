@@ -5,13 +5,12 @@ module.exports =function(grunt) {
 		copy: {
 			main: {
 				files: [
-					{expand: true, src: ['../*.html'], dest: '../deploy/*.html'},
-					{expand: true, src: ['../*.json'], dest: '../deploy/*.json'},
-					{expand: true, src: ['../*.js'], dest: '../deploy/*.js'},
-					{expand: true, src: ['../css/*.min.css'], dest: '../deploy/*.min.css'},
-					{expand: true, src: ['../js/*.min.js'], dest: '../deploy/*.min.js'},
-					{expand: true, src: ['../img/*.*'], dest: '../deploy/*.*'},
-					{expand: true, src: ['../img/**'], dest: '../deploy/*.*'},
+					{expand: true, src: ['../*.html'], dest: '../../deploy/*.html'},
+					{expand: true, src: ['../json/*.json'], dest: '../../deploy/*.json'},
+					{expand: true, src: ['../css/*.min.css'], dest: '../../deploy/*.min.css'},
+					{expand: true, src: ['../js/*.min.js'], dest: '../../deploy/*.min.js'},
+					{expand: true, src: ['../img/*.*'], dest: '../../deploy/*.*'},
+					{expand: true, src: ['../img/**'], dest: '../../deploy/*.*'},
 				],
 			},
 		},
