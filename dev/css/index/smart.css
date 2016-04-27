@@ -1,0 +1,295 @@
+/* -------------------------------------------------------
+---------------------------------------------------------- 
+												SMART
+----------------------------------------------------------
+--------------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 550px) {
+
+    #wrapper {
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	.logoContainer {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.logoContainer img {
+		padding-left: 30%;
+	}
+
+
+	/* ------------------------------- BLOG SECTION */
+
+	#sliderIndex {
+		clear: both;
+		width: 100%;
+		height: 300px;
+		margin: 0 auto;
+		padding: 2%;
+	}
+
+
+	/* ------------------------------- PILL MENU */
+
+	#infoArea {
+		height: 350px;
+		margin: 0 auto;
+		background-color: #ff6f53;
+    	color: #fff;
+    	padding: 1.5%;
+		clear: both;	
+	}
+
+	.pillNavigation{
+		width: 100%;
+		padding: 20px 0 20px 0;
+		margin: 0 auto;
+	}
+
+	.pillNavigation ul li a{
+		
+		font-size: 10px;
+		font-weight: bold;
+		color: #ffb0a1;
+		padding-top: 25%;
+		text-align: right;
+	}
+
+	.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+		background-color: #ff6f53;
+		border-style: none;
+	}
+
+	.nav-pills > li > a:focus, .nav-pills > li > a:hover {
+		color: #fff;
+		background-color: #ff6f53;
+		border-style: none;
+		outline: none;
+
+	}
+
+	.nav-pills{
+		border-right: 0.5px;
+		border-style: dotted;
+		border-color: #ffb0a1;
+	}
+
+	.pillNavigation .tab-content .tab-pane > h2 {
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.pillNavigation .tab-content .tab-pane > p {
+		font-size: 10px;
+		font-weight: bold;
+		line-height: 18px;
+	}
+
+	.pillNavigation .tab-content .tab-pane p > a {
+		font-size: 9px;
+		color:#fff;
+		text-decoration: underline dotted;
+	}
+
+
+	/* ------------------------------- BLOG SECTION */
+	#blogIndex {
+		margin: 50px auto;
+		clear: both;
+		padding: 3%;
+		
+		}
+
+	#blogIndex p {
+		font-size: 11px;
+		color: #494949;
+		}
+
+	.blogImg img{
+		width: 100%;
+		margin-top: 35px;
+		clear: both;
+		}
+
+	.textBlog, .authorInfo {
+		margin-top: 20px;
+		}
+
+	.textBlog a{
+		font-weight: bold;
+		font-size: 23px;
+		color: #3F3E3E;
+		text-align: right;
+		}
+
+	hr {
+		margin: 15px;
+		border-top: 1px dotted #ccc; 
+		}
+
+	.postInfo, .authorInfo a {
+		font-size: 11px;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #3F3E3E;
+	}
+
+	.authorInfo time {
+		color: #ff6f53;
+		text-transform: uppercase;
+	}
+	.commentIcon img {
+		width: 10px;
+		padding: 0 5px 0 5px;
+	}
+
+	.infoBlog {
+		margin-top: 20px;
+		line-height: 20px;
+		color: #ccc;
+	}
+
+	.btnBlog {
+		font-size: 11px;
+		color: #3F3E3E;
+		text-decoration: underline dotted;
+		text-transform: uppercase;
+	}
+
+
+		/* ------------------------------- OWL CARROUSEL */
+	#carouselOwl {
+		width: 100%;
+		margin: 0 auto;
+		clear: both;
+	}
+
+	.bottom_block .container {
+		width:80%;
+	}
+
+	#owl-demo {
+		width: 90%;
+    	clear: both;
+	}
+
+	#owl-demo .item{
+    	margin: 3px;
+	}
+
+	#owl-demo .item img{
+    	display:block;
+    	width: 100%;
+    	height: auto;
+	}
+
+	h3 {
+    	font-size: 18px;
+    	line-height: 20px;
+    	color: #494949;
+    	margin-bottom: 10px;
+    	float: left;
+	}
+
+	.bottom_block {
+  
+    	margin: 0 auto;
+    	padding-bottom: 50px;
+    	background-color: #f6f6f6;
+	}
+
+	.item {
+    	width: 100%;
+	}
+
+	.owl-controls {
+    	float: right;
+	}
+
+	.owl-prev, .owl-next {
+    	cursor: pointer;
+    	float: left;
+	}
+
+	.owl-prev img:hover, .owl-next img:hover {
+    	background-color: #ff6f53;
+    	padding: 3px;
+	}
+
+	.count{
+		font-size: 15px;
+	}
+
+	.count:hover{
+		color: #ff6f53;
+	}
+
+	.container .tx {
+		margin: 5px;
+		font-size: 15px;
+	}
+
+	.item a{
+		font-size: 9px;
+		color: #3F3E3E;
+		text-decoration: underline dotted;
+		text-transform: uppercase;
+	}
+
+
+
+	/* ------------------------------- FOOTER */
+
+	footer {
+		width: 100%;
+		margin: 0 auto;
+		
+		}
+
+	.yoga, .address, .newsletter {
+		margin: 40px 0 0 30px;
+		clear: both;
+		}
+
+
+	footer h4{
+		font-size: 25px;
+		color: #494949;
+		}
+
+	.phone {
+		font-size: 25px;
+		font-weight: bold;
+		color: #ff6f53;
+		}
+
+	.iconPhone {
+		width: 25px;
+	}
+
+	.copy, .str {
+		font-size: 12px;
+		color: #3F3E3E;
+	}
+
+	.copy, .socials {
+		margin: 10px 0 0 25px;
+	}
+
+	.socials img {
+		width: 30px;
+	}
+
+	.str {
+		font-style: normal;
+		margin-top: 15px;
+	}
+
+	.str p{
+		margin-left: 28px;
+	}
+
+}
