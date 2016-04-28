@@ -1,0 +1,63 @@
+{
+	"menu": [{
+		"name": "HOME",
+		"link": "index.html",
+		"sub": null
+	}, {
+		"name": "ABOUT US",
+		"link": "about_us.html",
+		"sub": [{
+			"name": "Yoga Poses",
+			"link": "",
+			"sub": null
+		}, {
+			"name": "Pranayamas",
+			"link": "",
+			"sub": null
+		}, {
+			"name": "Yoga Bandhas",
+			"link": "",
+			"sub": null
+		}, {
+			"name": "Yoga Mudras",
+			"link": "",
+			"sub": null
+		}, {
+			"name": "Yoga Diet",
+			"link": "",
+			"sub": null
+		}, {
+			"name": "Yoga at Office",
+			"link": "",
+			"sub": null
+		}, {
+			"name": "Yoga for Women",
+			"link": "",
+			"sub": null
+		}, {
+			"name": "Benefits of Yoga",
+			"link": "",
+			"sub": null
+		}, {
+			"name": "Yoga Directory",
+			"link": "",
+			"sub": null
+		}, {
+			"name": "Yoga Articles",
+			"link": "",
+			"sub": null
+		}]
+	}, {
+		"name": "TRAINING",
+		"link": "training.html",
+		"sub": null
+	}, {
+		"name": "GALLERY",
+		"link": "gallery.html",
+		"sub": null
+	}, {
+		"name": "CONTACTS",
+		"link": "contact.html",
+		"sub": null
+	}]
+}

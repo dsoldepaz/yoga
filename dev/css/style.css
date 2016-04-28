@@ -33,48 +33,49 @@ ul {
   width: 1060px;
 }
 /*Navigation Menu*/
-#menu {
+.menu {
   margin: 0 auto;
   text-align: center;
 }
-#menu ul {
+.menu ul {
   list-style: none;
   position: relative;
   display: inline-table;
 }
-#menu ul ul {
+.menu ul ul {
   display: none;
   background: #f36e56;
   position: absolute;
   top: 100%;
   z-index: 1;
 }
-#menu ul ul li {
+.menu ul ul li {
   float: none;
   position: relative;
+  text-align: left;
 }
-#menu ul ul li a {
+.menu ul ul li a {
   color: white;
   opacity: 0.5;
 }
-#menu ul ul li a:hover {
+.menu ul ul li a:hover {
   border: none;
   opacity: 1;
 }
-#menu ul li {
-  margin: 4px;
+.menu ul li {
+  margin: 0 4px 0;
   float: left;
   padding: 14px 6px;
 }
-#menu ul li a {
+.menu ul li a {
   display: inline-block;
   text-decoration: none;
   opacity: 0.5;
 }
-#menu ul li:hover > ul {
+.menu ul li:hover > ul {
   display: block;
 }
-#menu ul a:hover {
+.menu ul a:hover {
   border: none;
   border-bottom: 2px;
   border-bottom-color: #e9e9e9;
@@ -82,7 +83,7 @@ ul {
   opacity: 1;
   margin-bottom: -2px;
 }
-#menu li a {
+.menu li a {
   color: black;
   text-decoration: none;
 }
