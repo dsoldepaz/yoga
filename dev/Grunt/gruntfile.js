@@ -46,13 +46,14 @@ module.exports =function(grunt) {
         },
 
         uglify: {
-            options: {
-                manage: false,
-            },
             my_target: {
-                files: {
-                    '../js/main.min.js' : '../js/main.js'
-                }
+                files: [{
+                    expand: true,
+                    cwd: '../js/',
+                    src: ['*.js', '!*.min.js'],
+                    dest: '../js/',
+                    ext: '.min.js'
+                }]
             }
         },
 
