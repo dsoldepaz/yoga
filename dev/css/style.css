@@ -387,7 +387,8 @@ ul {
   width: 250px;
   margin-right: 10px;
 }
-.contact-data p {
+.contact-data ul {
+  list-style: none;
   font-size: 18px;
   line-height: 1.8rem;
   color: #ccc;
